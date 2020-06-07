@@ -1,5 +1,6 @@
 #include "L1_Peripheral/gpio.hpp"
 #include "L1_Peripheral/inactive.hpp"
+#include "L1_Peripheral/lpc18xx/gpio.hpp"
 #include "L1_Peripheral/lpc17xx/gpio.hpp"
 #include "L1_Peripheral/lpc40xx/gpio.hpp"
 #include "L2_HAL/switches/button.hpp"
@@ -32,6 +33,13 @@ int main()
     static sjsu::lpc40xx::Gpio lpc40xx_led_gpio(2, 3);
     button_gpio = &lpc40xx_button_gpio;
     led_gpio    = &lpc40xx_led_gpio;
+  }
+  else if constexpr (sjsu::build::kPlatform == sjsu::build::Platform::lpc18xx)
+  {
+    static sjsu::lpc18xx::Gpio lpc18xx_button_gpio(1, 19);
+    static sjsu::lpc18xx::Gpio lpc18xx_led_gpio(2, 3);
+    button_gpio = &lpc18xx_button_gpio;
+    led_gpio    = &lpc18xx_led_gpio;
   }
   else
   {
