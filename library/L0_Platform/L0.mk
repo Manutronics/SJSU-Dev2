@@ -14,8 +14,6 @@ LINT_FILTER += $(LIBRARY_DIR)/L0_Platform/arm_cortex/
 LINT_FILTER += $(LIBRARY_DIR)/L0_Platform/example/example_memory_map_c.h
 # LPC17xx
 LINT_FILTER += $(LIBRARY_DIR)/L0_Platform/lpc17xx/LPC17xx.h
-# LPC18xx
-LINT_FILTER += $(LIBRARY_DIR)/L0_Platform/lpc18xx/LPC18xx.h
 # LPC40xx
 LINT_FILTER += $(LIBRARY_DIR)/L0_Platform/lpc40xx/LPC40xx.h
 # MSP432P401R

@@ -14,7 +14,6 @@ enum class Platform
 {
   host,         // NOLINT
   lpc17xx,      // NOLINT
-  lpc18xx,      // NOLINT
   lpc40xx,      // NOLINT
   linux,        // NOLINT
   msp432p401r,  // NOLINT
@@ -38,7 +37,6 @@ constexpr const char * Stringify(Platform platform)
   {
     case Platform::host: result = "host"; break;
     case Platform::lpc17xx: result = "lpc17xx"; break;
-    case Platform::lpc18xx: result = "lpc18xx"; break;
     case Platform::lpc40xx: result = "lpc40xx"; break;
     case Platform::linux: result = "linux"; break;
     case Platform::msp432p401r: result = "msp432p401r"; break;

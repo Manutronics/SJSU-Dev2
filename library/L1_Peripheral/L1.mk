@@ -1,7 +1,6 @@
 include $(LIBRARY_DIR)/L1_Peripheral/cortex/L1_cortex.mk
 include $(LIBRARY_DIR)/L1_Peripheral/example/L1_example.mk
 include $(LIBRARY_DIR)/L1_Peripheral/lpc17xx/L1_lpc17xx.mk
-include $(LIBRARY_DIR)/L1_Peripheral/lpc18xx/L1_lpc18xx.mk
 include $(LIBRARY_DIR)/L1_Peripheral/lpc40xx/L1_lpc40xx.mk
 include $(LIBRARY_DIR)/L1_Peripheral/stm32f10x/L1_stm32f10x.mk
 include $(LIBRARY_DIR)/L1_Peripheral/stm32f4xx/L1_stm32f4xx.mk

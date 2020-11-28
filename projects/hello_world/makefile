@@ -11,7 +11,5 @@ $(info +---------------------------------------------------------------+)
 $(error )
 endif
 
-$(info printf '$(SJSU_DEV2_BASE)')
-
 # Using the directory location, include the project makefile
 include $(SJSU_DEV2_BASE)/makefile
